@@ -46,3 +46,16 @@ print(A * B)  # Possible only if the two matrixes are defined via matrix() opera
 
 # Function that generate an array with the numbers from the first to the last - 1 parameters
 arange(1, 11) # Generate an array with ten numbers, starting from 1 to 10
+
+def multipliers(V):
+    """
+    Input:
+        - V: Vector of n elements to which compute the multiplier vector
+    Output:
+        - V: Array of multipliers
+    """
+    multipliers = zeros(len(V) - 1)
+    for i in range(2, V):
+        multipliers[i] = - V[i] / V[0]
+
+    return multipliers
