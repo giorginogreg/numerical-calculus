@@ -45,4 +45,4 @@ print(A * B)  # Possible only if the two matrixes are defined via matrix() opera
 # If the matrixes had been defined as array, i should have used to use dot() operator
 
 # Function that generate an array with the numbers from the first to the last - 1 parameters
-arange(1, 11)
+arange(1, 11) # Generate an array with ten numbers, starting from 1 to 10
